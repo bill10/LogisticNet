@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LogisticNet</title>
+    </head>
+
+    <body>
+        <form id="employee_form" method="post" action="/HR/create_profile/">
+
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <input type="submit" name="submit" value="Create Profile" />
+        </form>
+    </body>
+
+</html>
